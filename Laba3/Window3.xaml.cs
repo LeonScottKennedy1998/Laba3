@@ -29,6 +29,7 @@ namespace Laba3
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+
             Grid3.Columns[0].Visibility = Visibility.Hidden;
             Grid3.Columns[8].Visibility = Visibility.Hidden;
         }

@@ -9,7 +9,6 @@
     <Grid>
         <DataGrid x:Name="Grid1" AutoGenerateColumns="False">
             <DataGrid.Columns>
-                <DataGridTextColumn Binding="{Binding AdopterID}" Header="ID"/>
                 <DataGridTextColumn Binding="{Binding SurnameAdopter}" Header="Фамилия"/>
                 <DataGridTextColumn Binding="{Binding NameAdopter}" Header="Имя"/>
                 <DataGridTextColumn Binding="{Binding MiddlenameAdopter}" Header="Отчество"/>

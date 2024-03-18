@@ -113,6 +113,17 @@ Dogs.NameDog, Dogs.Breed, Dogs.Age,Dogs.Gender, Dogs.Size, Dogs.ArrivalDate, Dog
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
+              <DbSource ConnectionRef="DogPriutConnectionString (Settings)" DbObjectType="Unknown" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="PoluchitTablicu" GetMethodModifier="Public" GetMethodName="PoluchitTablicu" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="PoluchitTablicu" UserSourceName="PoluchitTablicu">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select Adopters.AdopterID,Adopters.NameAdopter, Adopters.SurnameAdopter,Adopters.MiddlenameAdopter,
+Adopters.Email,Adopters.Phone,Adopters.AddressAdopter,Adopters.AdoptionDate, Adopters.ID_Dog,
+Dogs.NameDog, Dogs.Breed, Dogs.Age,Dogs.Gender, Dogs.Size, Dogs.ArrivalDate, Dogs.IsAdopted from Adopters
+inner join Dogs on Adopters.ID_Dog = Dogs.Dog_ID;</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
             </Sources>
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DogsTableAdapter" GeneratorDataComponentClassName="DogsTableAdapter" Name="Dogs" UserDataComponentName="DogsTableAdapter">
@@ -211,95 +222,95 @@ SELECT Dog_ID, NameDog, Breed, Age, Gender, Size, ArrivalDate, IsAdopted FROM Do
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="PriutDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="PriutDS" msprop:Generator_DataSetName="PriutDS">
+  <xs:element name="PriutDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="PriutDS" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="PriutDS">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Adopters" msprop:Generator_RowEvHandlerName="AdoptersRowChangeEventHandler" msprop:Generator_RowDeletedName="AdoptersRowDeleted" msprop:Generator_RowDeletingName="AdoptersRowDeleting" msprop:Generator_RowEvArgName="AdoptersRowChangeEvent" msprop:Generator_TablePropName="Adopters" msprop:Generator_RowChangedName="AdoptersRowChanged" msprop:Generator_RowChangingName="AdoptersRowChanging" msprop:Generator_TableClassName="AdoptersDataTable" msprop:Generator_RowClassName="AdoptersRow" msprop:Generator_TableVarName="tableAdopters" msprop:Generator_UserTableName="Adopters">
+        <xs:element name="Adopters" msprop:Generator_RowClassName="AdoptersRow" msprop:Generator_RowEvHandlerName="AdoptersRowChangeEventHandler" msprop:Generator_RowDeletedName="AdoptersRowDeleted" msprop:Generator_RowDeletingName="AdoptersRowDeleting" msprop:Generator_RowEvArgName="AdoptersRowChangeEvent" msprop:Generator_TablePropName="Adopters" msprop:Generator_RowChangedName="AdoptersRowChanged" msprop:Generator_UserTableName="Adopters" msprop:Generator_RowChangingName="AdoptersRowChanging" msprop:Generator_TableClassName="AdoptersDataTable" msprop:Generator_TableVarName="tableAdopters">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="AdopterID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="AdopterID" msprop:Generator_ColumnPropNameInTable="AdopterIDColumn" msprop:Generator_ColumnVarNameInTable="columnAdopterID" msprop:Generator_UserColumnName="AdopterID" type="xs:int" />
-              <xs:element name="NameAdopter" msprop:Generator_ColumnPropNameInRow="NameAdopter" msprop:Generator_ColumnPropNameInTable="NameAdopterColumn" msprop:Generator_ColumnVarNameInTable="columnNameAdopter" msprop:Generator_UserColumnName="NameAdopter" minOccurs="0">
+              <xs:element name="AdopterID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="AdopterID" msprop:Generator_ColumnPropNameInTable="AdopterIDColumn" msprop:Generator_ColumnPropNameInRow="AdopterID" msprop:Generator_ColumnVarNameInTable="columnAdopterID" type="xs:int" />
+              <xs:element name="NameAdopter" msprop:Generator_UserColumnName="NameAdopter" msprop:Generator_ColumnPropNameInTable="NameAdopterColumn" msprop:Generator_ColumnPropNameInRow="NameAdopter" msprop:Generator_ColumnVarNameInTable="columnNameAdopter" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="SurnameAdopter" msprop:Generator_ColumnPropNameInRow="SurnameAdopter" msprop:Generator_ColumnPropNameInTable="SurnameAdopterColumn" msprop:Generator_ColumnVarNameInTable="columnSurnameAdopter" msprop:Generator_UserColumnName="SurnameAdopter" minOccurs="0">
+              <xs:element name="SurnameAdopter" msprop:Generator_UserColumnName="SurnameAdopter" msprop:Generator_ColumnPropNameInTable="SurnameAdopterColumn" msprop:Generator_ColumnPropNameInRow="SurnameAdopter" msprop:Generator_ColumnVarNameInTable="columnSurnameAdopter" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="MiddlenameAdopter" msprop:Generator_ColumnPropNameInRow="MiddlenameAdopter" msprop:Generator_ColumnPropNameInTable="MiddlenameAdopterColumn" msprop:Generator_ColumnVarNameInTable="columnMiddlenameAdopter" msprop:Generator_UserColumnName="MiddlenameAdopter" minOccurs="0">
+              <xs:element name="MiddlenameAdopter" msprop:Generator_UserColumnName="MiddlenameAdopter" msprop:Generator_ColumnPropNameInTable="MiddlenameAdopterColumn" msprop:Generator_ColumnPropNameInRow="MiddlenameAdopter" msprop:Generator_ColumnVarNameInTable="columnMiddlenameAdopter" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Email" msprop:Generator_ColumnPropNameInRow="Email" msprop:Generator_ColumnPropNameInTable="EmailColumn" msprop:Generator_ColumnVarNameInTable="columnEmail" msprop:Generator_UserColumnName="Email" minOccurs="0">
+              <xs:element name="Email" msprop:Generator_UserColumnName="Email" msprop:Generator_ColumnPropNameInTable="EmailColumn" msprop:Generator_ColumnPropNameInRow="Email" msprop:Generator_ColumnVarNameInTable="columnEmail" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="100" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Phone" msprop:Generator_ColumnPropNameInRow="Phone" msprop:Generator_ColumnPropNameInTable="PhoneColumn" msprop:Generator_ColumnVarNameInTable="columnPhone" msprop:Generator_UserColumnName="Phone" minOccurs="0">
+              <xs:element name="Phone" msprop:Generator_UserColumnName="Phone" msprop:Generator_ColumnPropNameInTable="PhoneColumn" msprop:Generator_ColumnPropNameInRow="Phone" msprop:Generator_ColumnVarNameInTable="columnPhone" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="20" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="AddressAdopter" msprop:Generator_ColumnPropNameInRow="AddressAdopter" msprop:Generator_ColumnPropNameInTable="AddressAdopterColumn" msprop:Generator_ColumnVarNameInTable="columnAddressAdopter" msprop:Generator_UserColumnName="AddressAdopter" minOccurs="0">
+              <xs:element name="AddressAdopter" msprop:Generator_UserColumnName="AddressAdopter" msprop:Generator_ColumnPropNameInTable="AddressAdopterColumn" msprop:Generator_ColumnPropNameInRow="AddressAdopter" msprop:Generator_ColumnVarNameInTable="columnAddressAdopter" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="255" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="AdoptionDate" msprop:Generator_ColumnPropNameInRow="AdoptionDate" msprop:Generator_ColumnPropNameInTable="AdoptionDateColumn" msprop:Generator_ColumnVarNameInTable="columnAdoptionDate" msprop:Generator_UserColumnName="AdoptionDate" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="ID_Dog" msprop:Generator_ColumnPropNameInRow="ID_Dog" msprop:Generator_ColumnPropNameInTable="ID_DogColumn" msprop:Generator_ColumnVarNameInTable="columnID_Dog" msprop:Generator_UserColumnName="ID_Dog" type="xs:int" minOccurs="0" />
+              <xs:element name="AdoptionDate" msprop:Generator_UserColumnName="AdoptionDate" msprop:Generator_ColumnPropNameInTable="AdoptionDateColumn" msprop:Generator_ColumnPropNameInRow="AdoptionDate" msprop:Generator_ColumnVarNameInTable="columnAdoptionDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ID_Dog" msprop:Generator_UserColumnName="ID_Dog" msprop:Generator_ColumnPropNameInTable="ID_DogColumn" msprop:Generator_ColumnPropNameInRow="ID_Dog" msprop:Generator_ColumnVarNameInTable="columnID_Dog" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Dogs" msprop:Generator_RowEvHandlerName="DogsRowChangeEventHandler" msprop:Generator_RowDeletedName="DogsRowDeleted" msprop:Generator_RowDeletingName="DogsRowDeleting" msprop:Generator_RowEvArgName="DogsRowChangeEvent" msprop:Generator_TablePropName="Dogs" msprop:Generator_RowChangedName="DogsRowChanged" msprop:Generator_RowChangingName="DogsRowChanging" msprop:Generator_TableClassName="DogsDataTable" msprop:Generator_RowClassName="DogsRow" msprop:Generator_TableVarName="tableDogs" msprop:Generator_UserTableName="Dogs">
+        <xs:element name="Dogs" msprop:Generator_RowClassName="DogsRow" msprop:Generator_RowEvHandlerName="DogsRowChangeEventHandler" msprop:Generator_RowDeletedName="DogsRowDeleted" msprop:Generator_RowDeletingName="DogsRowDeleting" msprop:Generator_RowEvArgName="DogsRowChangeEvent" msprop:Generator_TablePropName="Dogs" msprop:Generator_RowChangedName="DogsRowChanged" msprop:Generator_UserTableName="Dogs" msprop:Generator_RowChangingName="DogsRowChanging" msprop:Generator_TableClassName="DogsDataTable" msprop:Generator_TableVarName="tableDogs">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Dog_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="Dog_ID" msprop:Generator_ColumnPropNameInTable="Dog_IDColumn" msprop:Generator_ColumnVarNameInTable="columnDog_ID" msprop:Generator_UserColumnName="Dog_ID" type="xs:int" />
-              <xs:element name="NameDog" msprop:Generator_ColumnPropNameInRow="NameDog" msprop:Generator_ColumnPropNameInTable="NameDogColumn" msprop:Generator_ColumnVarNameInTable="columnNameDog" msprop:Generator_UserColumnName="NameDog" minOccurs="0">
+              <xs:element name="Dog_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="Dog_ID" msprop:Generator_ColumnPropNameInTable="Dog_IDColumn" msprop:Generator_ColumnPropNameInRow="Dog_ID" msprop:Generator_ColumnVarNameInTable="columnDog_ID" type="xs:int" />
+              <xs:element name="NameDog" msprop:Generator_UserColumnName="NameDog" msprop:Generator_ColumnPropNameInTable="NameDogColumn" msprop:Generator_ColumnPropNameInRow="NameDog" msprop:Generator_ColumnVarNameInTable="columnNameDog" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Breed" msprop:Generator_ColumnPropNameInRow="Breed" msprop:Generator_ColumnPropNameInTable="BreedColumn" msprop:Generator_ColumnVarNameInTable="columnBreed" msprop:Generator_UserColumnName="Breed" minOccurs="0">
+              <xs:element name="Breed" msprop:Generator_UserColumnName="Breed" msprop:Generator_ColumnPropNameInTable="BreedColumn" msprop:Generator_ColumnPropNameInRow="Breed" msprop:Generator_ColumnVarNameInTable="columnBreed" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Age" msprop:Generator_ColumnPropNameInRow="Age" msprop:Generator_ColumnPropNameInTable="AgeColumn" msprop:Generator_ColumnVarNameInTable="columnAge" msprop:Generator_UserColumnName="Age" type="xs:int" minOccurs="0" />
-              <xs:element name="Gender" msprop:Generator_ColumnPropNameInRow="Gender" msprop:Generator_ColumnPropNameInTable="GenderColumn" msprop:Generator_ColumnVarNameInTable="columnGender" msprop:Generator_UserColumnName="Gender" minOccurs="0">
+              <xs:element name="Age" msprop:Generator_UserColumnName="Age" msprop:Generator_ColumnPropNameInTable="AgeColumn" msprop:Generator_ColumnPropNameInRow="Age" msprop:Generator_ColumnVarNameInTable="columnAge" type="xs:int" minOccurs="0" />
+              <xs:element name="Gender" msprop:Generator_UserColumnName="Gender" msprop:Generator_ColumnPropNameInTable="GenderColumn" msprop:Generator_ColumnPropNameInRow="Gender" msprop:Generator_ColumnVarNameInTable="columnGender" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="10" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Size" msprop:Generator_ColumnPropNameInRow="Size" msprop:Generator_ColumnPropNameInTable="SizeColumn" msprop:Generator_ColumnVarNameInTable="columnSize" msprop:Generator_UserColumnName="Size" minOccurs="0">
+              <xs:element name="Size" msprop:Generator_UserColumnName="Size" msprop:Generator_ColumnPropNameInTable="SizeColumn" msprop:Generator_ColumnPropNameInRow="Size" msprop:Generator_ColumnVarNameInTable="columnSize" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="15" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="ArrivalDate" msprop:Generator_ColumnPropNameInRow="ArrivalDate" msprop:Generator_ColumnPropNameInTable="ArrivalDateColumn" msprop:Generator_ColumnVarNameInTable="columnArrivalDate" msprop:Generator_UserColumnName="ArrivalDate" type="xs:dateTime" minOccurs="0" />
-              <xs:element name="IsAdopted" msprop:Generator_ColumnPropNameInRow="IsAdopted" msprop:Generator_ColumnPropNameInTable="IsAdoptedColumn" msprop:Generator_ColumnVarNameInTable="columnIsAdopted" msprop:Generator_UserColumnName="IsAdopted" minOccurs="0">
+              <xs:element name="ArrivalDate" msprop:Generator_UserColumnName="ArrivalDate" msprop:Generator_ColumnPropNameInTable="ArrivalDateColumn" msprop:Generator_ColumnPropNameInRow="ArrivalDate" msprop:Generator_ColumnVarNameInTable="columnArrivalDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="IsAdopted" msprop:Generator_UserColumnName="IsAdopted" msprop:Generator_ColumnPropNameInTable="IsAdoptedColumn" msprop:Generator_ColumnPropNameInRow="IsAdopted" msprop:Generator_ColumnVarNameInTable="columnIsAdopted" minOccurs="0">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="20" />
@@ -322,7 +333,7 @@ SELECT Dog_ID, NameDog, Breed, Age, Gender, Size, ArrivalDate, IsAdopted FROM Do
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="FK__Adopters__ID_Dog__4316F928" msdata:parent="Dogs" msdata:child="Adopters" msdata:parentkey="Dog_ID" msdata:childkey="ID_Dog" msprop:Generator_UserParentTable="Dogs" msprop:Generator_UserChildTable="Adopters" msprop:Generator_RelationVarName="relationFK__Adopters__ID_Dog__4316F928" msprop:Generator_UserRelationName="FK__Adopters__ID_Dog__4316F928" msprop:Generator_ChildPropName="GetAdoptersRows" msprop:Generator_ParentPropName="DogsRow" />
+      <msdata:Relationship name="FK__Adopters__ID_Dog__4316F928" msdata:parent="Dogs" msdata:child="Adopters" msdata:parentkey="Dog_ID" msdata:childkey="ID_Dog" msprop:Generator_UserParentTable="Dogs" msprop:Generator_UserChildTable="Adopters" msprop:Generator_RelationVarName="relationFK__Adopters__ID_Dog__4316F928" msprop:Generator_ChildPropName="GetAdoptersRows" msprop:Generator_ParentPropName="DogsRow" msprop:Generator_UserRelationName="FK__Adopters__ID_Dog__4316F928" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>
