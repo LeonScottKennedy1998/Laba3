@@ -1,0 +1,93 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\\u0421 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\Project MPT\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B Visual Studio\\wpffuck\\Laba3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{83CAC19D-261D-4AB9-A559-4C0F6CFEDF82}|Laba3\\Laba3.csproj|d:\\\u0441 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\project mpt\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B visual studio\\wpffuck\\laba3\\laba3\\window3.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83CAC19D-261D-4AB9-A559-4C0F6CFEDF82}|Laba3\\Laba3.csproj|solutionrelative:laba3\\window3.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83CAC19D-261D-4AB9-A559-4C0F6CFEDF82}|Laba3\\Laba3.csproj|d:\\\u0441 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\project mpt\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B visual studio\\wpffuck\\laba3\\laba3\\window3.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{83CAC19D-261D-4AB9-A559-4C0F6CFEDF82}|Laba3\\Laba3.csproj|solutionrelative:laba3\\window3.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83CAC19D-261D-4AB9-A559-4C0F6CFEDF82}|Laba3\\Laba3.csproj|d:\\\u0441 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\project mpt\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B visual studio\\wpffuck\\laba3\\laba3\\priutds.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
+      "RelativeMoniker": "D:0:0:{83CAC19D-261D-4AB9-A559-4C0F6CFEDF82}|Laba3\\Laba3.csproj|solutionrelative:laba3\\priutds.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83CAC19D-261D-4AB9-A559-4C0F6CFEDF82}|Laba3\\Laba3.csproj|d:\\\u0441 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\project mpt\\\u043F\u0440\u043E\u0435\u043A\u0442\u044B visual studio\\wpffuck\\laba3\\laba3\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{83CAC19D-261D-4AB9-A559-4C0F6CFEDF82}|Laba3\\Laba3.csproj|solutionrelative:laba3\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\\u0421 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\Project MPT\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B Visual Studio\\wpffuck\\Laba3\\Laba3\\App.xaml",
+              "RelativeDocumentMoniker": "Laba3\\App.xaml",
+              "ToolTip": "D:\\\u0421 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\Project MPT\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B Visual Studio\\wpffuck\\Laba3\\Laba3\\App.xaml",
+              "RelativeToolTip": "Laba3\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-18T11:35:29.654Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Window3.xaml.cs",
+              "DocumentMoniker": "D:\\\u0421 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\Project MPT\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B Visual Studio\\wpffuck\\Laba3\\Laba3\\Window3.xaml.cs",
+              "RelativeDocumentMoniker": "Laba3\\Window3.xaml.cs",
+              "ToolTip": "D:\\\u0421 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\Project MPT\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B Visual Studio\\wpffuck\\Laba3\\Laba3\\Window3.xaml.cs",
+              "RelativeToolTip": "Laba3\\Window3.xaml.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAowCQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T12:27:33.198Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Window3.xaml",
+              "DocumentMoniker": "D:\\\u0421 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\Project MPT\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B Visual Studio\\wpffuck\\Laba3\\Laba3\\Window3.xaml",
+              "RelativeDocumentMoniker": "Laba3\\Window3.xaml",
+              "ToolTip": "D:\\\u0421 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\Project MPT\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B Visual Studio\\wpffuck\\Laba3\\Laba3\\Window3.xaml",
+              "RelativeToolTip": "Laba3\\Window3.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-18T12:27:09.208Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PriutDS.xsd",
+              "DocumentMoniker": "D:\\\u0421 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\Project MPT\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B Visual Studio\\wpffuck\\Laba3\\Laba3\\PriutDS.xsd",
+              "RelativeDocumentMoniker": "Laba3\\PriutDS.xsd",
+              "ToolTip": "D:\\\u0421 \u043C\u043E\u0435\u0433\u043E \u043A\u043E\u043C\u043F\u0430\\Project MPT\\\u041F\u0440\u043E\u0435\u043A\u0442\u044B Visual Studio\\wpffuck\\Laba3\\Laba3\\PriutDS.xsd",
+              "RelativeToolTip": "Laba3\\PriutDS.xsd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
+              "WhenOpened": "2024-03-18T12:24:26.846Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{873151d0-cf2e-48cc-b4bf-ad0394f6a3c3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

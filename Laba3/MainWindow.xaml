@@ -1,0 +1,30 @@
+﻿<Window x:Class="Laba3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Laba3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="Grid1" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding AdopterID}" Header="ID"/>
+                <DataGridTextColumn Binding="{Binding SurnameAdopter}" Header="Фамилия"/>
+                <DataGridTextColumn Binding="{Binding NameAdopter}" Header="Имя"/>
+                <DataGridTextColumn Binding="{Binding MiddlenameAdopter}" Header="Отчество"/>
+                <DataGridTextColumn Binding="{Binding Email}" Header="Почта"/>
+                <DataGridTextColumn Binding="{Binding Phone}" Header="Телефон"/>
+                <DataGridTextColumn Binding="{Binding AddressAdopter}" Header="Адрес проживания"/>
+                <DataGridTextColumn Binding="{Binding AdoptionDate}" Header="Дата оформления опекунства"/>
+                <DataGridTextColumn Binding="{Binding Dogs.NameDog}" Header="Имя собаки"/>
+                <DataGridTextColumn Binding="{Binding Dogs.Breed}" Header="Порода собаки"/>
+                <DataGridTextColumn Binding="{Binding Dogs.Age}" Header="Возраст собаки"/>
+                <DataGridTextColumn Binding="{Binding Dogs.Gender}" Header="Пол собаки"/>
+                <DataGridTextColumn Binding="{Binding Dogs.Size}" Header="Размер собаки"/>
+                <DataGridTextColumn Binding="{Binding Dogs.ArrivalDate}" Header="Дата прибытий собаки в приют"/>
+                <DataGridTextColumn Binding="{Binding Dogs.IsAdopted}" Header="Имеет опекуна?"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
